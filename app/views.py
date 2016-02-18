@@ -8,16 +8,21 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for
+<<<<<<< HEAD
 from flask.ext.sendmail import Message 
 import os
 
 from flask.ext.wtf import Form
 from wtforms import StringField, SubmitField
+=======
+
+>>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f
 
 ###
 # Routing for your application.
 ###
 
+<<<<<<< HEAD
 
 
 def sendemail(to, subject, template, **kwargs):
@@ -37,6 +42,8 @@ def submit():
     return render_template('index.html', form=form)
     
     
+=======
+>>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f
 @app.route('/')
 def home():
     """Render website's home page."""
@@ -75,6 +82,7 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
+<<<<<<< HEAD
     
     
 @app.route('/contact')
@@ -84,6 +92,8 @@ def contact ():
     
 
 
+=======
+>>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f
 
 
 if __name__ == '__main__':

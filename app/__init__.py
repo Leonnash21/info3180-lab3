@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 from flask import Flask
 from flask.ext.sendmail import Mail
@@ -24,3 +25,9 @@ mail = Mail(app)
 class Contact(Form):
     name = StringField('Enter name')
     submit = SubmitField('Submit')
+=======
+from flask import Flask
+
+app = Flask(__name__)
+from app import views
+>>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f

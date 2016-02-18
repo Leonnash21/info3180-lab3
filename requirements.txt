@@ -2,9 +2,12 @@
 # Flask
 # ----------------------
 flask
+<<<<<<< HEAD
 Flask-SQLAlchemy
 psycopg2
 Flask-WTF
+=======
+>>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f
 
 
 # ----------------------
