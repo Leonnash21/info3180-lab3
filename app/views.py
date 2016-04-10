@@ -8,6 +8,8 @@ This file creates your application.
 
 from app import app
 from flask import render_template, request, redirect, url_for
+import cgi
+import smtplib
 <<<<<<< HEAD
 from flask.ext.sendmail import Message 
 import os
@@ -34,16 +36,17 @@ def sendemail(to, subject, template, **kwargs):
 
 @app.route('/send', methods = ('GET', 'POST'))
 def submit():
-    form = Contact()
+    form = contact()
     if form.validate_on_submit():
         name = form.name.data
-        send_email(app.config['DEFAULT_ADMIN'], 'Button clicked', 'mail/', Firstname=name)
+        send_email(app.config['DEFAULT_ADMIN'], 'Button clicked', 'mail/', Fullname=name)
         return redirect('/send')
     return render_template('index.html', form=form)
     
     
 =======
 >>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f
+
 @app.route('/')
 def home():
     """Render website's home page."""
