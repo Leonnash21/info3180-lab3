@@ -82,7 +82,6 @@ def add_header(response):
 def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
-<<<<<<< HEAD
     
     
 @app.route('/contact')
@@ -92,8 +91,7 @@ def contact ():
     
 
 
-=======
->>>>>>> 3f7944126be42ccc3e27a2b2c49d2b6ad627b65f
+
 
 
 if __name__ == '__main__':
