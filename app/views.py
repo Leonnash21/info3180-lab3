@@ -71,7 +71,7 @@ def send_email(name, email, subject, new_message):
         subject,
         new_message)
 
-    username = "leonnash2008@gmail"
+    username = "leonnash2008@gmail.com"
     password = ""
 
     server = smtplib.SMTP('smtp.gmail.com:587')
